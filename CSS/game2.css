@@ -1,0 +1,13 @@
+body {
+  background: #867cfe;
+}
+
+.memory_card {
+  width: calc(25% - 10px);
+  height: calc(33% - 10px);
+}
+
+.front,
+.back {
+  background: #F4FE7C;
+}
