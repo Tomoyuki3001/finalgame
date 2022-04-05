@@ -4,10 +4,19 @@
   box-sizing: border-box;
 }
 
-body {
-  height: 100vh;
-  display: flex;
+.timer {
+  text-align: right;
+  margin-right: 10%;
+  font-size: 30px;
 }
+
+.container h1{
+  display: inline-block;
+  background: #b5b5b5;
+  margin: 5px;
+  padding: 5px 10px 5px 10px;
+}
+
 
 .memory_game {
   width: 640px;
