@@ -7,7 +7,12 @@ body {
   height: calc(33% - 10px);
 }
 
-.front,
+.front {
+  background: #ffffff;
+}
+
 .back {
-  background: #F4FE7C;
+  width: auto;
+  height: 100%;
+  background: #ffffff;
 }
