@@ -42,3 +42,36 @@
     height: 100%;
     border-radius: 5px;
   }
+.box_inside p {
+    font-size: 25px;
+    margin-top: 10px;
+  }
+
+  .firstbox_cards {
+    height: 130px;
+  }
+
+  .secondbox_timer {
+    margin: 10px;
+    height: 100px;
+  }
+
+  .box_choose {
+    font-size: 40px;
+    margin-top: 20px;
+  }
+
+  .choose_arrow{
+    width: 200px;
+    height: 100px;
+  }
+
+  .box_link {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .box_link p {
+    margin: 3%;
+  }
+  
