@@ -1,7 +1,7 @@
 //Timer function
 
 const timeH = document.querySelector("h1");
-let timesecond = 120;
+let timesecond = 90;
 
 displayTime(timesecond);
 
