@@ -1,7 +1,3 @@
-body {
-  background-image: url(./img_background.jpg);
-}
-
 .memory_card {
   width: calc(25% - 10px);
   height: calc(33% - 10px);

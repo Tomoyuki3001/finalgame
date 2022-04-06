@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: column;
     font-family: 'Source Sans Pro', sans-serif;
-    background-image: url(./img_casino.jpg);
+    background-image: url(../Images/img_casino.jpg);
   }
 
   h1 {
@@ -25,7 +25,7 @@
 
   section {
     width: 820px;
-    height: 420px;
+    height: 550px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -35,12 +35,12 @@
 
   .box {
     width: 400px;
-    height: 200px;
-    border: 1px solid #000000;
+    height: 220px;
+    border: ridge 15px #5d5d5d;
     margin: 5px;
     align-items: center;
     background: #ffffff;
-    box-shadow: 2px 2px 1px #000000;
+
   }
 
 .box_inside p {
@@ -49,12 +49,12 @@
   }
 
   .firstbox_cards {
-    height: 120px;
+    height: 100px;
   }
 
   .secondbox_timer {
     margin: 10px;
-    height: 100px;
+    height: 90px;
   }
 
   .box_choose {

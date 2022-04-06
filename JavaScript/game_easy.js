@@ -17,9 +17,12 @@ const countdown = setInterval(() => {
 function displayTime(second) {
   const min = Math.floor(second / 60);
   const sec = Math.floor(second % 60);
-  timeH.innerHTML = `${min < 10 ? "0" : ""}${min}:${sec < 10 ? "0" : ""}${sec}`;
+  timeH.innerHTML = `Time : ${min < 10 ? "0" : ""}${min}:${
+    sec < 10 ? "0" : ""
+  }${sec}`;
 }
 
+// To show up time up modal function
 function endtime() {
   timeH.innerHTML = "Time out";
   modalIn();
@@ -83,6 +86,7 @@ function disableCards() {
   firstCard.style.visibility = "hidden";
   secondCard.style.visibility = "hidden";
 
+  // To show up clear modal function
   let count = $(".flip").length;
   if (count == 6) {
     $(".overlay_failed").remove();
@@ -105,7 +109,7 @@ function unflipCards() {
     secondCard.classList.remove("flip");
 
     resetBoard();
-  }, 1000);
+  }, 800);
 }
 
 //Reset function
@@ -129,7 +133,7 @@ function clearIn() {
   });
 }
 
-// Failed form
+// Time up form
 
 function modalIn() {
   timeH.style.visibility = "hidden";

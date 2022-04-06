@@ -1,3 +1,5 @@
+// Box-shadow function
+
 $(".box_link p").each(function (index, element) {
   var animation = TweenMax.to(this, 0.2, {
     className: "+= superShadow",
@@ -17,6 +19,3 @@ $(".box_link p").hover(
     this.animation.reverse();
   }
 );
-
-let tl = gsap.timeline({ repeat: -1 });
-tl.to("h1", 50, { backgroundPosition: "-1100px 0" });
