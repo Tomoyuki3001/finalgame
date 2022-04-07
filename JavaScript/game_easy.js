@@ -24,12 +24,14 @@ function displayTime(second) {
 
 // To show up time up modal function
 function endtime() {
+  //This function is to call the time up modal.
   timeH.innerHTML = "Time out";
   modalIn();
 }
 
 //Memory game function
 
+//This function adds some functions to each cards.
 const cards = document.querySelectorAll(".memory_card");
 cards.forEach((card) => card.addEventListener("click", flipCard));
 
@@ -50,6 +52,7 @@ let lockBorard = false;
 let firstCard, secondCard;
 
 function flipCard() {
+  //This function adds "flip" tags to each cards.
   if (lockBorard) return;
   if (this === firstCard) return;
 
@@ -69,6 +72,7 @@ function flipCard() {
 //Check matcing function
 
 function checkForMatch() {
+  //This function recognigeds each cards with the "flip" tags.
   if (firstCard.dataset.framework === secondCard.dataset.framework) {
     disableCards();
     return;
@@ -86,9 +90,11 @@ function disableCards() {
   firstCard.style.visibility = "hidden";
   secondCard.style.visibility = "hidden";
 
-  // To show up clear modal function
+  // To show up clear modal function.
+  //Here counts "flip"tags and check whole tags amounts.
   let count = $(".flip").length;
   if (count == 6) {
+    //Then, if the "flip" tags and caeds array were same, the clear modal will show up.
     clearIn();
   }
   resetBoard();
@@ -99,6 +105,7 @@ function disableCards() {
 function unflipCards() {
   lockBorard = true;
 
+  //This function removes each "flip" tags from each cards.
   setTimeout(() => {
     firstCard.classList.remove("flip");
     secondCard.classList.remove("flip");
@@ -122,6 +129,7 @@ function resetBoard() {
 
 function clearIn() {
   timeH.style.visibility = "hidden";
+  $(".modal_failed, .overlay_failed").remove();
   $(".overlay, .modal").fadeIn();
 }
 

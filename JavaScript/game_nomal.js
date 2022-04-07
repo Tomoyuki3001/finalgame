@@ -88,7 +88,7 @@ function disableCards() {
 
   // To show up clear modal function
   let count = $(".flip").length;
-  if (count == 6) {
+  if (count == 12) {
     clearIn();
   }
   resetBoard();
@@ -122,6 +122,7 @@ function resetBoard() {
 
 function clearIn() {
   timeH.style.visibility = "hidden";
+  $(".modal_failed, .overlay_failed").remove();
   $(".overlay, .modal").fadeIn();
 }
 
