@@ -128,9 +128,6 @@ function resetBoard() {
 function clearIn() {
   timeH.style.visibility = "hidden";
   $(".overlay, .modal").fadeIn();
-  $(".close_btn").click(function () {
-    history.go(-1);
-  });
 }
 
 // Time up form
@@ -138,7 +135,4 @@ function clearIn() {
 function modalIn() {
   timeH.style.visibility = "hidden";
   $(".overlay_failed, .modal_failed").fadeIn();
-  $(".close_btn_failed").click(function () {
-    history.go(-1);
-  });
 }
