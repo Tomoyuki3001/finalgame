@@ -18,12 +18,13 @@ body{
 
 .time{
   display: inline-block;
-  margin: 5px;
-  padding: 5px 10px 5px 10px;
+  margin: 0px 5px 0px 5px;
+  padding: 0px 10px 0px 10px;
   color: #ffffff;
   font-size: 40px;
   font-weight: bold;
   background: #000000;
+  border: ridge 15px #5d5d5d;
 }
 
 /* Game css */
