@@ -88,14 +88,9 @@ function disableCards() {
 
   // To show up clear modal function
   let count = $(".flip").length;
-  if (count == 20) {
-    $(".overlay_failed").remove();
-    $(".modal_failed").remove();
-    $(".modal_p_failed").remove();
-    $(".close_btn_failed").remove();
+  if (count == 6) {
     clearIn();
   }
-
   resetBoard();
 }
 
