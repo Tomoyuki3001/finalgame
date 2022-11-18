@@ -1,7 +1,7 @@
 @media (min-width: 300px) and (max-width: 599px)  {
   .memory_card {
     width: calc(25% - 10px);
-    height: calc(40% - 10px);
+    height: calc(30% - 10px);
   }
 
   .front {
