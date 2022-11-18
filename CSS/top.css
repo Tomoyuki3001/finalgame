@@ -1,11 +1,61 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
   }
+
+  @media (min-width: 300px) and (max-width: 599px)  {
+  .game_body {
+    width: 100%;
+      text-align: center;
+      font-family: 'Source Sans Pro', sans-serif;
+      color: #ffffff;
+      background-image: url("https://images.unsplash.com/photo-1620589431040-bad261b752c7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+      background-size: 100%;
+  }
+
+  .game_body_title {
+      font-size: 40px;
+      margin: 10% 0% 5% 0%;
+      color: yellow;
+      align-items: center;
+      font-weight: bold;
+      -webkit-text-stroke: 1px blue;
+  }
+
+  .game_body_first_card, .game_body_fourth_card {
+    border: ridge 8px #ffffff;
+    margin: 5%;
+    padding: 5% 0%;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .game_body_first_card_sentense {
+    font-size: 24px;
+  }
+
+  .game_body_first_card_image {
+    margin: 5% 0%;
+    width: 70%;
+    height: auto;
+  }
+  .game_body_second_card,.game_body_third_card {
+    display:none
+  }
+
+  .game_body_fourth_card {
+    font-size: 24px;
+    padding: 5% 0%;
+  }
+
+  .game_body_links_sentenese {
+    font-size: 30px;
+  }
+  }
+
+  @media (min-width: 601px) {
   
-  body {
-    height: 100vh;
+  .game_body {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -13,7 +63,7 @@
     background-image: url(../Images/img_casino.jpg);
   }
 
-  h1 {
+  .game_body_title {
       font-size: 150px;
       padding-top: 30px;
       padding-bottom: 30px;
@@ -23,9 +73,8 @@
       -webkit-text-stroke: 5px yellow;
   }
 
-  section {
+  .game_body_section {
     width: 820px;
-    height: 550px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -33,63 +82,56 @@
     perspective: 1000px;
   }
 
-  .box {
+  .game_body_first_card, .game_body_second_card, .game_body_third_card, .game_body_fourth_card {
     width: 400px;
     height: 220px;
     border: ridge 15px #5d5d5d;
     margin: 5px;
     align-items: center;
     background: #ffffff;
-
   }
 
-.box_inside p {
+.game_body_first_card_sentense {
     font-size: 25px;
     margin-top: 10px;
   }
 
-  .firstbox_cards {
+  .game_body_first_card_image {
     height: 100px;
   }
 
-  .secondbox_timer {
+  .game_body_second_card_image {
     margin: 10px;
     height: 90px;
   }
 
-  .box_choose {
+  .game_body_choosing_section {
     font-size: 40px;
     margin-top: 20px;
   }
 
-  .choose_arrow{
+  .game_body_choosing_image{
     width: 200px;
     height: 100px;
   }
 
-  .box_link {
-    font-size: 40px;
-    text-align: center;
-  }
-
-  .box_link p {
+  .game_body_links_sentenese {
     padding-top: 2.5%;
     padding-bottom: 2.5%;
+    font-size: 35px;
+    position: relative;
+    font-weight: bold;
+    cursor: pointer;
   }
 
-  .box_link {
+  .game_body_links_box {
+    font-size: 40px;
+    text-align: center;
     background: #5f7979;
     color: #ffffff;
     text-align: center;
     letter-spacing: -3px;
     padding: 3.5px;
-  }
-
-  .box_link p {
-    font-size: 35px;
-    position: relative;
-    font-weight: bold;
-    cursor: pointer;
   }
 
   .superShadow {
@@ -109,4 +151,4 @@
                     0 10px 10px rgba(0,0,0,.2),
                     0 20px 20px rgba(0,0,0,.3);
   }
-  
+}

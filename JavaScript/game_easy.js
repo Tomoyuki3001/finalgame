@@ -1,4 +1,5 @@
 //Timer function
+// atsuya tanaka
 
 const timeH = document.querySelector("h1");
 let timesecond = 30;

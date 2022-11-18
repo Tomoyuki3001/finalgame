@@ -1,14 +1,33 @@
-.memory_card {
-  width: calc(33% - 10px);
-  height: calc(50% - 10px);
+@media (min-width: 300px) and (max-width: 599px)  {
+  .memory_card {
+    width: calc(50% - 10px);
+    height: calc(50% - 10px);
+  }
+
+  .front {
+    background: #ffffff;
+  }
+  
+  .back {
+    width: auto;
+    height: 100%;
+    background: #ffffff;
+  }
 }
 
-.front {
-  background: #ffffff;
-}
-
-.back {
-  width: auto;
-  height: 100%;
-  background: #ffffff;
+@media (min-width: 601px) {
+  .memory_card {
+    width: calc(33% - 10px);
+    height: calc(50% - 10px);
+  }
+  
+  .front {
+    background: #ffffff;
+  }
+  
+  .back {
+    width: auto;
+    height: 100%;
+    background: #ffffff;
+  }
 }
