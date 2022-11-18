@@ -26,11 +26,10 @@
 
   .easy_game_container {
     width: 100%;
-    height: 60vh;
     display: flex;
     flex-wrap: wrap;
     perspective: 1000px;
-    padding: 10% 5%;
+    padding: 10% 5% 20% 5%;
   }
 
   .memory_card {
