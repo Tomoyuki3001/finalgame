@@ -1,9 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 @media (min-width: 300px) and (max-width: 599px)  {
   .game_body{
     width: 100%;
@@ -24,15 +18,8 @@
     color: #ffffff;
   }
 
-  .easy_game_container {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    perspective: 1000px;
-    padding: 10% 5% 20% 5%;
-  }
-
   .memory_card {
+    width: 100%;
     margin: 5px;
     position: relative;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
@@ -53,6 +40,7 @@
   .front,
   .back {
     width: 100%;
+    height: auto;
     padding: 20px;
     position: absolute;
     border-radius: 5px;
@@ -173,15 +161,6 @@
 }
 
 /* Game css */
-
-.easy_game_container {
-  width: 640px;
-  height: 640px;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  perspective: 1000px;
-}
 
 .memory_card {
   margin: 5px;

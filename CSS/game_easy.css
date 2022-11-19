@@ -1,17 +1,27 @@
 @media (min-width: 300px) and (max-width: 599px)  {
   .memory_card {
     width: calc(50% - 10px);
-    height: calc(50% - 10px);
+    height: calc(33% - 10px);
   }
 
   .front {
     background: #ffffff;
+    width: 100%;
   }
   
   .back {
-    width: auto;
+    width: 100%;
     height: 100%;
     background: #ffffff;
+  }
+
+  .easy_game_container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+    padding: 5%;
   }
 }
 
@@ -29,5 +39,14 @@
     width: auto;
     height: 100%;
     background: #ffffff;
+  }
+
+  .easy_game_container {
+    width: 640px;
+    height: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
   }
 }

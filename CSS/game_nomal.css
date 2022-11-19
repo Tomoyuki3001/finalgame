@@ -6,12 +6,22 @@
 
   .front {
     background: #ffffff;
+    width: 100%;
   }
   
   .back {
-    width: auto;
-    height: 100%;
+    width: 100%;
+    /* height: auto; */
     background: #ffffff;
+  }
+
+  .nomal_game_container {
+    width: 100%;
+    height: 60vh;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
   }
 }
 
@@ -30,6 +40,15 @@
   width: auto;
   height: 100%;
   background: #ffffff;
+}
+
+.nomal_game_container {
+  width: 640px;
+  height: 640px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
 }
 
 }
